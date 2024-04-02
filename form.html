@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* input[type]
+        {
+            border: 2px solid rebeccapurple;
+        }
+        input[type][required]
+        {
+            border: 2px solid red;
+        } */
+        input[type][name][required]
+        {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>SAMPLE FORM</legend>
+        <table>
+            <form>
+                <tr>
+                    <td>
+                        <lable for="na">Name</lable>
+                    </td>
+                    <td>
+                        <input type="text" required id="na"  placeholder="enter ur name" maxlength="15"
+                            minlength="3" size="30px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="ema">Email</label></td>
+                    <td>
+                        <input type="email" id="ema" placeholder="enter ur email" size="30px"  name="mail" required/>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pwd">Password</label></td>
+                    <td>
+                        <input type="password"  id="pwd"  placeholder="enter ur password" max="8"
+                            min="8" size="30px" />
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mob">Mobile</label></th>
+                    <td>
+                        <input  type="tel" required id="mob" size="30px"/>
+                </tr>
+            </form>
+        </table>
+    </fieldset>
+</body>
+
+</html>
